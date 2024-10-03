@@ -15,7 +15,7 @@ app.get("/minimumCheck", (req, res) => {
       message: "Minimum card amount has been reached",
     });
   }
-  return res.status(400).json({
+  return res.status(200).json({
     status: false,
     isMinimumCartAmountReached: false,
     message: "Minimum card amount has not reached",
